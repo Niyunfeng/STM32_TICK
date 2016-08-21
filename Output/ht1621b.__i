@@ -1,0 +1,5 @@
+-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\USR -I..\FWlib\inc -I..\CMSIS -I..\BSP\bsp -I..\BSP\Comm -I..\BSP\DebugGPIO -I..\BSP\pub -I..\BSP\Tick -I..\BSP\delay -I..\BSP\Key -I..\BSP\DebugUart -I..\BSP\74HC595 -I..\BSP\ds18b20 -I..\BSP\Adc -I..\BSP\PT100 -I..\BSP\scalar_kalman_filter -I..\BSP\Nixietube -I..\BSP\pwm -I..\BSP\PID -I..\BSP\IncPID -I..\BSP\HT1621B --C99 
+-I D:\MDK\ARM\RV31\INC 
+-I D:\MDK\ARM\CMSIS\Include 
+-I D:\MDK\ARM\Inc\ST\STM32F10x 
+-DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -o "..\Output\ht1621b.o" --omf_browse "..\Output\ht1621b.crf" --depend "..\Output\ht1621b.d" "..\BSP\HT1621B\ht1621b.c"

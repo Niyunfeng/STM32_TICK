@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"..\output\main.o"
+"..\output\stm32f10x_it.o"
+"..\output\bsp.o"
+"..\output\debug_gpio.o"
+"..\output\debug_uart.o"
+"..\output\pub.o"
+"..\output\delay.o"
+"..\output\timer.o"
+"..\output\timer_core.o"
+"..\output\comm_rec.o"
+"..\output\comm_reply.o"
+"..\output\communication.o"
+"..\output\misc.o"
+"..\output\stm32f10x_dma.o"
+"..\output\stm32f10x_flash.o"
+"..\output\stm32f10x_gpio.o"
+"..\output\stm32f10x_rcc.o"
+"..\output\stm32f10x_tim.o"
+"..\output\stm32f10x_usart.o"
+"..\output\startup_stm32f10x_hd.o"
+"..\output\system_stm32f10x.o"
+--strict --scatter "..\Output\demo.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "..\Listing\demo.map" -o ..\Output\demo.axf
